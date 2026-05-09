@@ -1,0 +1,20 @@
+:root { font-family: 'MS Gothic', monospace; color: #fff; background: #0d0d0d; }
+* { box-sizing: border-box; image-rendering: pixelated; }
+body { margin: 0; display: grid; place-items: center; min-height: 100vh; background: #111; }
+.game-root { width: 520px; display: grid; gap: 8px; }
+.panel { background: #000; border: 3px solid #d8d8d8; color: #fff; padding: 8px; }
+.title-screen { height: 380px; display: grid; place-content: center; text-align: center; cursor: pointer; }
+.field { position: relative; padding: 0; overflow: hidden; }
+.tile { position: absolute; width: 40px; height: 40px; border: 1px solid #1f1f1f; }
+.tile-wall { background: #5a4c45; }
+.tile-floor { background: #8c8376; }
+.tile-grass { background: #496c3e; }
+.tile-road { background: #9d8560; }
+.entity { position: absolute; width: 32px; height: 32px; }
+.debug-sprite { background: #222; border: 2px solid #fff; color: #fff; font-size: 10px; display: grid; place-items: center; }
+.target-marker { position: absolute; width: 40px; height: 40px; background: rgba(80, 130, 255, 0.5); border: 2px solid #7facff; }
+.status, .message { min-height: 56px; }
+.battle-ui { display: grid; gap: 8px; }
+.commands { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+button { font: inherit; color: #fff; background: #1a1a1a; border: 2px solid #eee; padding: 6px; cursor: pointer; }
+button:hover { background: #2a2a2a; }
