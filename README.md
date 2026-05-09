@@ -54,3 +54,9 @@ npm run build
 - 装備・アイテム・ショップ・インベントリ
 - セーブ/ロード（LocalStorage）
 - spriteId による画像スプライト差し替え
+
+## GitHub Pages デプロイ
+
+- `.github/workflows/deploy-pages.yml` で `main` ブランチ push 時に自動デプロイします（lockfile 不要のため workflow は `npm install` を使用）。
+- GitHub の `Settings > Pages` で **Build and deployment: GitHub Actions** を選んでください。
+- Vite の `base` は Actions 実行時のみ `/horus-rpg/` に切り替わる設定です。
